@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Korea Customs Data | Dabid</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking BoxIcon for Icon -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="height:50px; width:100%; clear:both;"></div>
+    <div class="wrapper">
+      <header>
+        <i class="bx bx-left-arrow-alt"></i>Korea Customs Trade Data
+      </header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="break"></div>
+        <input
+          class="big hs-code"
+          type="text"
+          spellcheck="false"
+          placeholder="HS Code (10 digit)"
+          required
+          pattern="\d{10}"
+        />
+        <select class="export-type"></select>
+        <div class="break"></div>
+        <input
+          class="small start-date"
+          type="text"
+          spellcheck="false"
+          placeholder="from(202001)"
+          required
+          pattern="\d{6}"
+        />
+        <input
+          class="small end-date"
+          type="text"
+          spellcheck="false"
+          placeholder="to (202201)"
+          required
+          pattern="\d{6}"
+        />
+
+        <div class="break"></div>
+
+        <button>Search</button>
+      </div>
+
+    <div class="grid-container">
+
+
+
+      <main class="main">
+
+        <div class="main-header">
+          <div class="main-header__heading">Hello User</div>
+          <div class="main-header__updates">Recent Items</div>
+        </div>
+
+        <div class="main-overview">
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card</div>
+          </div>
+        </div>
+
+        <div class="main-cards">
+          <div id="chart1" class="card"></div>
+          
+          <div id="chart2" class="card"></div>
+          <div id="chart3" class="card"></div>
+          <div id="chart4" class="card"></div>
+
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2018 MTH</div>
+        <div class="footer__signature">Made with love by pure genius</div>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
